@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(67, 155, 182);
+    --primary-color-darker: rgb(29, 67, 78);
+}
+
+* {
+    box-sizing: border-box;
+outline: 0;
+}
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: var(--primary-color);
+        font-family: "Open sans" , sans-serif;
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+
+    .container {
+        max-width: 640px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .relogio {
+        font-size: 3em;
+        margin-left: 30%;
+        
+        
+    }
+
+    .pausado {
+        color: red;
+    }
+
+
+
+    button{
+        margin: 0px 5px 0 5px;
+        background-color: var(--primary-color);
+        border: none;
+        outline: 1px solid var(--primary-color-darker);
+        color: #fff;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 5px;
+    }
+
+  .botoes {
+    width: 640px;
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .iniciar{
+    width: 30%;
+  }
+
+  .pausar{
+    width: 30%;
+  }
+
+  .zerar{
+    width: 30%;
+  }
+
