@@ -9,8 +9,22 @@
     font-family: "Nunito";
 }
 
+html 
+{
+  scroll-behavior: smooth;
+}
 
-.container {
+a
+{
+  color: initial;
+  text-decoration: none;
+}
+body {
+  overflow: hidden;
+  transform-origin: right top;
+  
+}
+.cronometro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,10 +35,58 @@
     border-top: solid 2px rgb(35, 144, 207);
     border-image: linear-gradiente(rgb(35, 144, 207), rgb(3, 48, 75) 1 100%);
     border-radius: 20px;
-    margin: 50px 20%;
+    margin: 25%;
+    height: 100vh;
+    width: 100vh;
+}
+.timer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25%;
+  height: 100vh;
+  width: 100vh;
+  font-size: 3em;
 }
 
-#relogio {
+.horario
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.relogio-mundial 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 25%;
+  height: 100vh;
+  width: 100vh;
+}
+
+#horario-local
+{
+  margin-left: 5px;
+}
+
+.amostra-relogio
+{
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+.horario p
+{
+  padding: 10px;
+  border: none;
+}
+#relogio{
   font-size: 3em;
 }
 
@@ -84,4 +146,37 @@ button:active {
 
 .rodando {
     color: black;
+}
+
+.asidebar 
+{
+  
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  border-top: 7px solid  #2279c0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.asidebar div
+{
+  font-size: 15px;
+  padding: 20px;
+}
+
+.asidebar div:hover
+{
+  padding: 20px;
+  transform: translateY(-10px);
+  transition: box-shadow .15s,transform .15s;
+  border-top: solid 7px #2279c0;
+  cursor: pointer;
+  box-shadow:  black 1px inset;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
 }

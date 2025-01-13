@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <section class="container">
+     <section class="cronometro" id="cronometro">
         <p id="relogio">00:00:00</p>
         <div class="botoes">
         <button class="iniciar">Iniciar</button>
         <button class="zerar">Zerar</button>
         <button class="pausar">Pausar</button> 
         </div>
-     </section>
+    </section>
+     <section class="timer" id="timer">
+        <div class="setar">
+            <p class="contando"></p>
+            <div class="horario">
+            <p contenteditable="true" class="horas">00h</p>
+            <p contenteditable="true" class="minutos">00m</p>
+            <p contenteditable="true" class="segundos">00s</p>
+        </div>
+        </div>
+        <div class="buttons">
+        <button class="iniciartimer">Iniciar</button>
+    </div>
+    <div class="contando"></div>
+    </section>
+
+    <section class="relogio-mundial" id="relogio-mundial">
+        <label for="horarios">Selecione um fuso-horário</label>
+        <select name="horario-local" id="horario-local">
+            <option selected="selected" disabled="disabled" value=""></option>
+            <option value="brasil">Brasil</option>
+            <option value="estados-unidos">Estados Unidos</option>
+            <option value="china">China</option>
+            <option value="alemanha">Alemanha</option>
+        </select>
+        <p class="amostra-relogio"></p>
+    </section>
+    
+
+     <div class="asidebar">
+        <div>
+            <h2><a href="#cronometro">Cronometro</a></h2>
+        </div>
+        <div>
+            <h2><a href="#timer">Timer</a></h2>
+        </div>
+        <div>
+            <h2><a href="#relogio-mundial">Relógio Mundial</a></h2>
+        </div>
+    </div>
+    
+
+     
+     
 </body>
 <script src="main.js"></script>
 </html>
